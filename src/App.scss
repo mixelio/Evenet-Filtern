@@ -1,0 +1,30 @@
+@import './assets/styles/_reset';
+@import './components/EventFilternForm/EventFilternForm.module.scss';
+@import './components/NotificationSwitch/NotificationSwitch.module.scss';
+@import './components/FilterSelection/FilterSelection.module.scss';
+
+.demo-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #aaa;
+}
+
+.demo-wrapper {
+  width: 375px;
+  height: 665px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border: 6px solid #000;
+  border-radius: 26px;
+}
+
+.modal-open {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}

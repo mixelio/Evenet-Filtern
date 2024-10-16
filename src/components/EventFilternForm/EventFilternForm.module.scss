@@ -1,0 +1,39 @@
+.eventFilternForm {
+  padding: 60px 16px 16px;
+  width: 100%;
+  background-color: #F1F3FA;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition-duration: 300ms;
+
+  // styles for hide and show
+
+  transform: translateY(101%);
+
+  &._active {
+    transform: translateY(0);
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: #BDC6D3;
+    border-radius: 2px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    color: #012C54;
+    margin-bottom: 20px;
+  }
+}

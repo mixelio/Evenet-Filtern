@@ -1,0 +1,16 @@
+.filterSelection {
+  width: 100%;
+  margin-bottom: 30px;
+
+  &__label {
+    color: #0D4E32;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .multiValue {
+    background-color: goldenrod;
+  }
+}

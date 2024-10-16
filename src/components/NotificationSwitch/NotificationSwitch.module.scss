@@ -1,0 +1,60 @@
+.notificationSwitch {
+  padding: 14px 16px;
+  background-color: #EEFCF3;
+  border-radius: 10px;
+
+  &__info {
+    padding-left: 40px;
+    margin-bottom: 14px;
+    color: #EEFCF3;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 30px;
+      height: 30px;
+      background-color: #77FEB0;
+      background-image: url('assets/images/icons/notifications_active.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0D4E32;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #0D4E32;
+  }
+  &__buttonsBox {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+  }
+  &__button_hide {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    background-color: transparent;
+    color: #0D4E32;
+  }
+  &__button_accept {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+    height: 40px;
+    border-radius: 20px;
+    color: #144C33;
+    background-color: #77FEB0;
+  }
+}
